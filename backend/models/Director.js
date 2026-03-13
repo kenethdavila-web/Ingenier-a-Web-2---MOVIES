@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const DirectorSchema = Schema({
 
-  nombres: {
+  nombre: {
     type: String,
     required: [true, 'El nombre es obligatorio'],
     trim: true
