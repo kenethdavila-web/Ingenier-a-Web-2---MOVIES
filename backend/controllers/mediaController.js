@@ -1,4 +1,4 @@
-const Media = require("../models/media");
+const Media = require("../models/Media");
 
 /* Obtener todas las medias */
 const getMedias = async (req, res) => {
