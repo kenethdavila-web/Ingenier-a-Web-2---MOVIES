@@ -10,6 +10,10 @@ const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("API de Movies funcionando 🚀");
+});
+
 /*-----Routes -----*/
 app.use("/api/genero", require("./backend/routes/genero"));
 app.use("/api/media", require("./backend/routes/media"));
