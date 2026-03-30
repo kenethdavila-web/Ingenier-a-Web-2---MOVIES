@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-const {getConnection} = require("./backend/db/db-connection-mongo");
+const { getConnection } = require("./backend/db/db-connection-mongo");
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("API de Movies funcionando 🚀");
+    res.send("API de Movies funcionando 🚀");
 });
 
 /*-----Routes -----*/

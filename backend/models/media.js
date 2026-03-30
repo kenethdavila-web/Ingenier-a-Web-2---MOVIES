@@ -33,25 +33,25 @@ const MediaSchema = Schema({
 
   genero: {
     type: Schema.Types.ObjectId,
-    ref: "Genero",
+    ref: "genero",
     required: true
   },
 
   director: {
     type: Schema.Types.ObjectId,
-    ref: "Director",
+    ref: "director",
     required: true
   },
 
   productora: {
     type: Schema.Types.ObjectId,
-    ref: "Productora",
+    ref: "productora",
     required: true
   },
 
   tipo: {
     type: Schema.Types.ObjectId,
-    ref: "Tipo",
+    ref: "tipo",
     required: true
   },
 
@@ -62,4 +62,4 @@ const MediaSchema = Schema({
 
 });
 
-module.exports = model("Media", MediaSchema);
+module.exports = model("media", MediaSchema);
